@@ -1,1 +1,1 @@
-# QA_Cypress_CloneProjectExample
+# Projeto de Cypress - Para Reutilizar.
