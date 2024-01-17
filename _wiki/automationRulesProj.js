@@ -1,10 +1,4 @@
 /*
-        //O Tópico "Zero" deverá ser removido ao final do projeto.
-        0. Anotações - Lmebretes:
-
-        01.js e 01.cy.js - Revisados
-        02.js falta validar ícone que gira de processando e amarelo e 02.cy.js adicionar novos casos
-
         1. As funções deverão conter na ordem a seguinte lógica de contrução:
 
                 1° - Visita a Url/Link desejado:

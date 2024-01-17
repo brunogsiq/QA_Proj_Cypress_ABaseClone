@@ -24,7 +24,7 @@
     //Xhr
     if (Cypress.config("hideXHRInCommandLog")) {
         const app = window.top;
-    
+
         if (
         app &&
         !app.document.head.querySelector("[data-hide-command-log-request]")
@@ -33,7 +33,7 @@
         style.innerHTML =
         ".command-name-request, .command-name-xhr { display: none }";
         style.setAttribute("data-hide-command-log-request", "");
-    
+
         app.document.head.appendChild(style);
         }
     }
