@@ -1,5 +1,5 @@
 /*
-    Estruturação do Projeto:
+    1 - Estruturação do Projeto:
 
         nameProject
             _wiki/
@@ -26,9 +26,9 @@
             .gitignore
             Readme.md
 
-    Dependências p/ Instalar:
+    2 - Dependências p/ Instalar:
 
-        npm install -D cypress-wait-until
+        2.1 - npm install -D cypress-wait-until
             Após:
                 Add this line to your project's cypress/support/commands.js:
                 import 'cypress-wait-until';
@@ -39,7 +39,7 @@
                     cy.get('')
                         .should("be.visible"));
 
-        npm install -D cypress-iframe
+        2.2 - npm install -D cypress-iframe
             Após, será necessário inserir em cypress/support/commands.js, inserir:
             import 'cypress-iframe'; or require('cypress-iframe');
 */

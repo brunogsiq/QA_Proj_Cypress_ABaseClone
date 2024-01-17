@@ -1,6 +1,6 @@
 export function elementsProj() {
-  return {
-    clogo:  "",
-    cword: "Bem Vindo"
-  };
-}
+    return {
+        clogo:  "",
+        cword: "Bem Vindo"
+    };
+  }
