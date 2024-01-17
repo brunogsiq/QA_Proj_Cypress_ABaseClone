@@ -1,1 +1,1 @@
-# Projeto de Cypress - Para Reutilizar.
+# Projeto de Cypress - Para Reutilizar
