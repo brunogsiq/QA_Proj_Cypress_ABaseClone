@@ -1,4 +1,3 @@
 /*
-Casos de testes - Gherkin
-
+    Casos de testes - BDD
 */

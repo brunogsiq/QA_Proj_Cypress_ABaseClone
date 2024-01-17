@@ -23,6 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import 'cypress-wait-until';
-import '@cypress/xpath';
-Cypress.Commands.add('cyref', (<reference types="cypress"/> ))
+    import 'cypress-wait-until';
+    import 'cypress-iframe'
+    import '@cypress/xpath';
+
+    Cypress.Commands.add('cyref', (<reference types="cypress"/> ))
