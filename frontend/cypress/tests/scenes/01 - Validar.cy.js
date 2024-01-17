@@ -15,7 +15,8 @@ context("01 - PLATAFORMA X (Ex: Web)", () =>
     {
         it('01 - 01.01 - NOME DO TESTE (Ex: Validar Acesso a Url)', () =>
         {
-            
-        }
+            cy.get()
+                .should('be.visible')
+        })
     })
 })
