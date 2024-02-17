@@ -1,39 +1,26 @@
 /*
-        1. As funções deverão conter na ordem a seguinte lógica de contrução:
+        1 - Dependências p/ Instalar:
+                1.1 - npm install -D cypress-wait-until
+                Após:
+                        Add this line to your project's cypress/support/commands.js:
+                        import 'cypress-wait-until';
+                        and add in cypress/support/e2e.js:
+                        require('cypress-wait-until')
+                Ex:
+                        cy.waitUntil(() =>
+                        cy.get('')
+                                .should("be.visible"));
 
-                1° - Visita a Url/Link desejado:
-                        Os Testes deverão contemplar que todos os links são válidos.
-                2° - Validação de Critérios de Aceite:
-                        Os Testes que deverão contemplar toda a parte visual do sistema.
-                                ** css.
-                                ** palavras / português.
-                                ** alertas.
-                3° - Validação Funcional Primária:
-                        Os Testes deverão contemplar todas as funcionalidades básicas,
-                                ou seja, cliques entre outras alternativas, sem a necessidade de fazer
-                                        parte de um fluxo.
-                4° - Validação Funcional de Fluxos Positivos:
-                        Os Testes deverão contemplar todos os fluxos existente baseado no concenito de testes positivos.
-                5º - Validação Funcional de Fluxos Negativos:
-                        Os Testes deverão contemplar todos os fluxos existente baseado no concenito de testes negativos.
+                1.2 - npm install -D cypress-iframe
+                Após, será necessário inserir em cypress/support/commands.js, inserir:
+                import 'cypress-iframe'; or require('cypress-iframe');
 
         2. - Os Testes por padrão deverão ser escritos da seguinte forma:
-
                 N° - Sw - Tela - Objetivo do Teste - Teste realizado
                 Ex:
-                01 - Web - Tela de Processamento - Validar processamento de taxa - Dados de datas e matriz válidos e existentes.
+                        01 - Web - Tela de Processamento - Validar processamento de taxa - Dados de datas e matriz válidos e existentes.
 
-        3. Regras para os codificação dos testes visuais:
-
-        As validações realizadas deverão respeitar a ordem de como o código é apresentado, ou seja a estrutura desenvolvida.
-
-        As validações que deverão ser realizadas em Elementos são:
-                Sem evento:
-                Ex: Campos apenas visuais
-                Com evento:
-                Ex: Campos de entrada, saída, botões.
-
-        Os campos a seguir deverão possuir as seguintes validações:
+        3 - Os campos a seguir deverão possuir as seguintes validações:
                 Alertas:
                         Visível
                         Tag html ou classe
