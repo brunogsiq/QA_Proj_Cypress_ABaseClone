@@ -1,39 +1,28 @@
-// ***********************************************************
-// This example support/e2e.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+/// <reference types='cypress' /> 
 
-// Import commands.js using ES2015 syntax:
-//import './commands'
+import './locators';
+import './locatorsMapping';
+import './commands_00_Settings';
+import './commands_01_Login';
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-    require('cypress-wait-until');
-    require('cypress-iframe');
+require('cypress-wait-until');
 
-    //Xhr
-    if (Cypress.config("hideXHRInCommandLog")) {
-        const app = window.top;
+Cypress.SelectorPlayground.defaults(
+{
+    selectorPriority: ['id', 'class', 'attributes', 'data-cy', 'data-test', 'data-testid', 'tag', 'nth-child']
+})
 
-        if (
-        app &&
-        !app.document.head.querySelector("[data-hide-command-log-request]")
-        ) {
+if (Cypress.config("hideXHRInCommandLog"))
+{
+    const app = window.top;
+
+    if (app &&
+    !app.document.head.querySelector("[data-hide-command-log-request]")
+    )
+    {
         const style = app.document.createElement("style");
-        style.innerHTML =
-        ".command-name-request, .command-name-xhr { display: none }";
+        style.innerHTML = ".command-name-request, .command-name-xhr { display: none }";
         style.setAttribute("data-hide-command-log-request", "");
-
         app.document.head.appendChild(style);
-        }
     }
+}
