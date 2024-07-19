@@ -1,0 +1,68 @@
+
+{
+    "Coment": "Exemplo de estrutura Json para mapeamento de propriedades de um componente/elemento",
+    "Page": "{{$URL-Encontrada no sitemap.xml}}",
+    "Elements": {
+        "<name_element>": {
+            "properties": {
+                "Action": "string",
+                "Description": "string",
+                "Find": {
+                    "#id": "#string",
+                    "css": "string",
+                    "selector": "string",
+                    "xpath": "string"
+                },
+                "Type": "string"
+            }
+        },
+        "Botão_login": {
+            "properties": {
+                "Action": "click",
+                "Description": "Iniciar_Login",
+                "Find": {
+                    "#id": "#btn-login",
+                    "css": "exemplo",
+                    "selector": "#btn-login/selc",
+                    "xpath": "//[#btn-login/selc]"
+                },
+                "Type": "btn"
+            }
+        }
+    },
+    "Exemple Type": [
+        "btn",
+        "placeholder",
+        "Wrap",
+        "Texto",
+        "Imagens = <img>",
+        "Links = <a>",
+        "Forms",
+        "box",
+        "table = <table>, <tr>, <td>",
+        "Arrays = <ol>, <ul>, <li>",
+        "Divs = <div>",
+        "mídia = <audio>, <video>",
+        "Frames",
+        "IFrames",
+        "header",
+        "footer",
+        "nav",
+        "span",        
+        "map",
+        "area",
+        "canvas",
+        "SVG",
+        "drawer"
+
+    ],
+    "Action": [
+        "click",
+        "tap",
+        "hove"
+    ]
+}
+
+/*
+    Este JSON representa um mapeamento de propriedades de elementos/componentes em uma página web, incluindo informações como a ação a ser realizada (click, tap, hover), descrição, localização (ID, CSS, XPath), tipo de elemento (botão, texto, imagem, etc.) e exemplos de tipos de elementos e ações.
+*/
