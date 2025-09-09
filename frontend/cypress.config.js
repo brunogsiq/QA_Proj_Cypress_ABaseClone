@@ -8,14 +8,11 @@ module.exports = defineConfig(
     chromeWebSecurity: false,
     reporter: "mochawesome",
     reporterOptions: {
-        reportDir: 'cypress/reports',
+        reportDir: 'cypress/report',
         overwrite: true,
         html: true,
         json: false,
         timestamp: 'dd-mm-yyyy_HH-MM-ss'
-    },
-    env: {
-        baseUrl: "https://www.google.com",
     },
     e2e: {
         defaultCommandTimeout: 9000,
@@ -23,12 +20,17 @@ module.exports = defineConfig(
         hideXHRInCommandLog: true,
         //Aqui ficarão todos os meus testes:
         specPattern: [
-          "cypress/e2e/#Mapeando Elementos/01 - Mapeando Elementos.cy.js",
-          "cypress/e2e/01 - Validar.cy.js",
-          "cypress/e2e/acessar gmail.cy.js"
+          "cypress/e2e/00 - Teste Padrao/_TestePadrao.cy.js"
         ],
         setupNodeEvents(on, config) {
           // implement node event listeners here
         },
+    },
+    env: {
+        baseUrl: "www.google.com",
+        dev: "https://www.",
+        tst: "https://www.",
+        hml: "https://www.",
+        prod: "https://www."
     },
 });

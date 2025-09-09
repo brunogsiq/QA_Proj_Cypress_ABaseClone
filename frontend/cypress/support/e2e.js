@@ -1,28 +1,23 @@
 /// <reference types='cypress' /> 
 
-import './locators';
-import './locatorsMapping';
-import './commands_00_Settings';
-import './commands_01_Login';
+import './pages/nomeTela/tela';
+import './commands/commands_00_Settings';
 
 require('cypress-wait-until');
 
-Cypress.SelectorPlayground.defaults(
-{
-    selectorPriority: ['id', 'class', 'attributes', 'data-cy', 'data-test', 'data-testid', 'tag', 'nth-child']
-})
+Cypress.ElementSelector.defaults({
+    selectorPriority: ['data-cy', 'data-test', 'data-testid', 'id', 'class', 'attributes', 'tag', 'nth-child']
+});
 
 if (Cypress.config("hideXHRInCommandLog"))
 {
     const app = window.top;
 
-    if (app &&
-    !app.document.head.querySelector("[data-hide-command-log-request]")
-    )
+    if (app && !app.document.head.querySelector("[data-hide-command-log-request]"))
     {
         const style = app.document.createElement("style");
         style.innerHTML = ".command-name-request, .command-name-xhr { display: none }";
         style.setAttribute("data-hide-command-log-request", "");
         app.document.head.appendChild(style);
-    }
-}
+    };
+};
