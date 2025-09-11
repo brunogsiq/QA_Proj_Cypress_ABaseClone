@@ -1,4 +1,4 @@
-export class Tela
+export class nomeTela
 {
     get nomeElemento() {
         return cypress.get('...')

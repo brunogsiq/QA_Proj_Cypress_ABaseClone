@@ -1,6 +1,6 @@
 /// <reference types='cypress' /> 
 
-import './pages/nomeTela/tela';
+import './pages/elementos';
 import './commands/commands_00_Settings';
 
 require('cypress-wait-until');

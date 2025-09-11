@@ -18,6 +18,9 @@ context('nomeDaTela', () =>
 			//Se houver
 			afterEach(() => {
 				//Executa depois de cada it
+				cy.clearAllLocalStorage();
+				cy.clearAllCookies();
+				cy.clearAllSessionStorage();
 			});
 
 			it(`${teste}.${complemento} - `, () => 
@@ -56,6 +59,9 @@ context('nomeDaTela', () =>
 			//Se houver
 			afterEach(() => {
 				//Executa depois de cada it
+				cy.clearAllLocalStorage();
+				cy.clearAllCookies();
+				cy.clearAllSessionStorage();
 			});
 
 			it(`${++teste}.${complemento} - `, () => 
@@ -94,6 +100,9 @@ context('nomeDaTela', () =>
 			//Se houver
 			afterEach(() => {
 				//Executa depois de cada it
+				cy.clearAllLocalStorage();
+				cy.clearAllCookies();
+				cy.clearAllSessionStorage();
 			});
 
 			it(`${++teste}.${complemento} - `, () => 
