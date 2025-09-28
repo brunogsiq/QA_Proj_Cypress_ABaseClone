@@ -1,0 +1,20 @@
+{
+	"usuario1": {
+		"tipo": "administrador",  
+		"email": "adm@teste.com",
+		"senha": "Abcd123#"
+	},
+	"Pessoa": {
+		"name": "Nome Teste",
+		"sobrenome": "Teste do Teste",
+		"cpf": "01091910109",
+		"email": "teste@teste.com",
+		"endereco": {
+			"cep": "01091910",
+			"rua": "São Jorge",
+			"nmumero": "777",
+			"complemento": "Parque São Jorge"
+		},
+		"file": "nomeArquivo.png"
+	}
+}

@@ -20,7 +20,7 @@ module.exports = defineConfig({
 		defaultCommandTimeout: 9000,
 		experimentalRunAllSpecs: true,
 		hideXHRInCommandLog: true,
-		specPattern: "cypress/tests/scenes/**/*.cy.js",
+		specPattern: "cypress/e2e/**/*.cy.js",
 			setupNodeEvents(on, config) {
 				require("cypress-mochawesome-reporter/plugin")(on);
 			},
