@@ -21,3 +21,13 @@ if (Cypress.config("hideXHRInCommandLog"))
         app.document.head.appendChild(style);
     };
 };
+
+// cypress/support/e2e.js
+beforeEach(() => {
+    const BLOCK = [
+    '**/google-analytics.com/**',
+    '**/fonts.gstatic.com/**',
+    '**/fonts.googleapis.com/**'
+    ];
+    BLOCK.forEach(p => cy.intercept('GET', p, { statusCode: 204, body: '' }));
+});

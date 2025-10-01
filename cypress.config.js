@@ -18,6 +18,7 @@ module.exports = defineConfig({
 	e2e: {
 		baseUrl: "https://www.google.com.br",
 		defaultCommandTimeout: 9000,
+		pageLoadTimeout: 120000,
 		experimentalRunAllSpecs: true,
 		hideXHRInCommandLog: true,
 		specPattern: "cypress/e2e/**/*.cy.js",
