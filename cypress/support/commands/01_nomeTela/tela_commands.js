@@ -2,7 +2,7 @@
 
 import 'cypress-wait-until';
 
-import { Tela } from '../../pages/nomeTela/tela';
+import { nomeTela } from '../../pages/elementos';
 
 Cypress.Commands.add("nomeComando", () => 
 {

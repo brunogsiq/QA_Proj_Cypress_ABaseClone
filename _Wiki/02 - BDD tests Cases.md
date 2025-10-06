@@ -1,8 +1,6 @@
-/*
-    Casos de testes - BDD
+# Casos de testes - BDD
 
-        01 - Acessar Url principal:
-            Dado,
-            Quando,
-            Então.
-*/
+1. Acessar Url principal:
+    - Dado,
+    - Quando,
+    - Então.

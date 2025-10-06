@@ -9,13 +9,15 @@ context('nomeDaTela', () =>
 		let complemento = 1;
         describe(`${cenario} - `, () =>
         {
-            beforeEach(() => {
+            beforeEach(() =>
+			{
 				//Executa antes de cada it
 				cy.visit(Cypress.env("baseUrl"));
 			});
 
 			//Se houver
-			afterEach(() => {
+			afterEach(() =>
+			{
 				//Executa depois de cada it
 				cy.clearAllLocalStorage();
 				cy.clearAllCookies();
@@ -82,7 +84,6 @@ context('nomeDaTela', () =>
 				
 			});
 
-			
 			it(`${teste}.${++complemento} - `, () => 
 			{
 				//Passo - Dado...
@@ -101,12 +102,14 @@ context('nomeDaTela', () =>
 		describe(`${++cenario} - Fluxos Funcionais`, () => 
 		{
 			//Se houver
-			beforeEach(() => {
+			beforeEach(() =>
+			{
 				//Executa antes de cada it
 			});
 
 			//Se houver
-			afterEach(() => {
+			afterEach(() =>
+			{
 				//Executa depois de cada it
 				cy.clearAllLocalStorage();
 				cy.clearAllCookies();

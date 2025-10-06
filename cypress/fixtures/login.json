@@ -1,0 +1,20 @@
+{
+    "User1": {
+        "tipo": "",
+        "baseUrl": "",
+        "username": "",
+        "password": ""
+    },
+    "User2": {
+        "tipo": "",
+        "baseUrl": "",
+        "email": "",
+        "senha": ""
+    },
+    "User3": {
+        "tipo": "",
+        "baseUrl": "",
+        "email": "",
+        "senha": ""
+    }
+}

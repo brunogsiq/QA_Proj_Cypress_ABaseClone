@@ -1,4 +1,0 @@
-/*
-    Duvidas Projeto
-        
-*/
