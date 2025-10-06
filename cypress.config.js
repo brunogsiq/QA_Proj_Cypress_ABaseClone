@@ -6,9 +6,9 @@ module.exports = defineConfig({
 	video: true,
 	chromeWebSecurity: false,
 
-	reporter: "cypress-mochawesome-reporter",
+	reporter: "mochawesome",
 	reporterOptions: {
-		reportDir: "cypress/reports/mochawesome",
+		reportDir: "cypress/reports/",
 		overwrite: true,
 		html: true,
 		json: false,
@@ -23,7 +23,7 @@ module.exports = defineConfig({
 		hideXHRInCommandLog: true,
 		specPattern: "cypress/e2e/**/*.cy.js",
 			setupNodeEvents(on, config) {
-				require("cypress-mochawesome-reporter/plugin")(on);
+				// implement node event listeners here;
 			},
 	},
 
